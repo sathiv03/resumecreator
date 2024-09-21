@@ -1,0 +1,260 @@
+/* style.css */
+
+/* Global Styles */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgb(30, 30, 30), rgb(80, 80, 80));
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-builder {
+  padding: 27px 100px;
+}
+
+/* Container Styles */
+.container {
+  padding: 20px 30px;
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  border-radius: 10px;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Form Styles */
+input, textarea {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #666;
+  display: block;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-bottom: 2px solid #337ab7;
+}
+
+button {
+  border: none;
+  background-color: #337ab7;
+  padding: 15px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #23527c;
+}
+
+/* Output Styles */
+.output-container {
+  display: none;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.output {
+  background-color: #fff;
+  border: 2px solid #337ab7;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  padding: 20px 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid #337ab7;
+}
+
+.heading h4 {
+  color: #ccc;
+  padding-top: 9px;
+}
+
+.info {
+  display: flex;
+  padding: 20px;
+}
+
+.left {
+  width: 40%;
+  border-right: 2px dashed #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right {
+  width: 60%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.box {
+  margin: 10px 0;
+  padding: 5px 10px;
+  height: auto;
+  overflow-wrap: break-word;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.box h2, .box p {
+  margin-bottom: 5px;
+}
+
+.tip {
+  font-size: small;
+  color: gray;
+  text-align: center;
+}
+
+.credit {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 3px;
+  color: rgb(80, 80, 80);
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(247, 28, 12);
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media screen and (max-width: 920px) {
+  .container {
+    width: 100%;
+  }
+  .output-container {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resume-builder {
+    padding: 10px 30px;
+  }
+  h1 {
+    font-size: 160%;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .left {
+    border-right: none;
+    width: 100%;
+  }
+  .right {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.resume-builder {
+  padding: 27px 100px;
+}
+
+.container {
+  padding: 20px 30px;
+  background: linear-gradient(to right, #ADD8E6 30%, #ffffff 30%);
+  border-radius: 10px;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  width: 40%;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #ADD8E6;
+  padding: 20px;
+}
+
+.right {
+  width: 60%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container {
+  padding: 20px 30px;
+  background: linear-gradient(to right, #ADD8E6 30%, #ffffff 30%);
+  border-radius: 10px;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  width: 40%;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #ADD8E6;
+  padding: 20px;
+}
+
+.right {
+  width: 60%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Print-specific styles */
+@media print {
+   {
+    background-color: #f7d4fa;
+    -webkit-print-color-adjust: exact;
+  }
+  .left {
+    background-color: #ADD8E6;
+    -webkit-print-color-adjust: exact;
+  }
+}

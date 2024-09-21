@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Creator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="resume-builder">
+        <div class="container">
+            <h1>Resume Creator</h1>
+            <div class="resume_container">
+                <form class="inputField">
+                    <h2>Contact Information</h2>
+                    <input type="text" name="name" placeholder="Full Name" title="Enter Your Full Name" />
+                    <input type="email" name="email" placeholder="Email Address" title="Enter Your Email Address" />
+                    <input type="tel" name="phone" placeholder="Phone Number" title="Enter Your Phone Number" />
+                    <input type="text" name="linkedin" placeholder="LinkedIn Profile (optional)" title="Enter Your LinkedIn Profile" />
+
+                    <h2>Professional Summary</h2>
+                    <textarea name="objective" placeholder="Objective" title="Enter Your Professional Objective" cols="40" rows="3"></textarea>
+
+                    <h2>Education</h2>
+                    <textarea name="academic_details" placeholder="Academic Details" title="Enter Your Academic Details" cols="40" rows="3"></textarea>
+
+                    <h2>Work Experience</h2>
+                    <textarea name="work_experience" placeholder="Work Experience" title="Enter Your Work Experience" cols="40" rows="6"></textarea>
+
+                    <h2>Skills</h2>
+                    <textarea name="skills" title="Enter Your Skills" placeholder="Skills" cols="40" rows="3"></textarea>
+
+                    <h2>Projects</h2>
+                    <textarea name="projects" title="Enter Your Projects" placeholder="Projects" cols="40" rows="3"></textarea>
+
+                    <h2>Achievements</h2>
+                    <textarea name="achievements" placeholder="Achievements" cols="40" rows="3" title="Enter Your Achievements"></textarea>
+                </form>
+            </div>
+            <p class="credit"> Created by <a href="(link unavailable)" target="_blank"> A^2MS^2 </a> </p>
+            <p class="tip"> **Make Your Own Identity and Frame** </p>
+        </div>
+    </section>
+
+    <div class="output_container"></div>
+
+    <button onclick="hide()"> Generate / Edit </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
